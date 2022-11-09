@@ -19,5 +19,9 @@ public class CartServiceImpl implements CartService{
 		
 		return cartRepository.save(new Cart()).getCartId();
 	}
-	
+
+	@Override
+	public void checkoutCart(long cartId) {
+		cartRepository.checkoutCart(cartId);
+	}
 }
