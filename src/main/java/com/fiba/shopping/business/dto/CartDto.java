@@ -14,7 +14,7 @@ public class CartDto {
 	
 	private boolean cartStatus;
 	
-	private List<CartProduct> cartProducts;  
+	private List<CartProductDto> cartProductDtos;
 	
 	public CartDto() {
 	}
@@ -58,12 +58,12 @@ public class CartDto {
 		this.cartStatus = cartStatus;
 	}
 
-	public List<CartProduct> getCartProducts() {
-		return cartProducts;
+	public List<CartProductDto> getCartProducts() {
+		return cartProductDtos;
 	}
 
-	public void setCartProducts(List<CartProduct> cartProducts) {
-		this.cartProducts = cartProducts;
+	public void setCartProducts(List<CartProductDto> cartProductDtos) {
+		this.cartProductDtos = cartProductDtos;
 	} 
 	
 }
