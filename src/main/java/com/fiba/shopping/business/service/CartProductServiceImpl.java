@@ -31,5 +31,9 @@ public class CartProductServiceImpl implements CartProductService{
 
 		cartProductRepository.save(cartProduct);
 	}
-	
+
+	@Override
+	public void deleteProduct(long cartId, long productId) {
+		cartProductRepository.deleteProduct(cartId, productId);
+	}
 }

@@ -32,5 +32,10 @@ public class CartController {
 		cartService.checkoutCart(cartId);
 	}
 
+	@DeleteMapping("/shopping/cart/{cartId}/remove/{productId}")
+	public void delete(@PathVariable("cartId") long cartId
+			,@PathVariable("productId") long productId) {
+		cartProductService.deleteProduct(cartId,productId);
+	}
 
 }
